@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,table,td,input,fieldset,dl,dt,dd,div,p,img{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+ul,ol,li{
+	list-style:none;
+}
+img{
+	display: block;
+}
+/*commonHeader*/
+.headBbox{
+	width:100%;
+	background-color:#010101; 
+}
+	.headSbox{
+		margin:0 auto;
+		width:980px;
+		text-align:center;
+		height:45px;
+	}
+		.headSbox img{
+			float:left;
+			margin-top:7px;
+		}
+		.headulBox{
+		float:right;
+		}
+			.headulBox li{
+			display:inline;
+			height:45px;
+		}
+			.headulBox a{
+			font-size:10px;
+			color:#cfcfcf;
+			line-height: 45px;
+			}
+			.headulBox .headlis{
+				color:#f6d036;
+			}
+				.headulBox li:nth-child(2){
+					padding:0px 18px 0px 16px;
+					background: url(../img/headbgimg1.jpg) no-repeat 57px 7px;
+				}
+				.headulBox li:nth-child(3){
+					padding:0px 18px;
+					background: url(../img/headbgimg1.jpg) no-repeat 95px 7px;
+				}
+				.headulBox li:nth-child(4){
+					padding:0px 35px 0px 18px;
+					background: url(../img/headbgimg2.jpg) no-repeat 70px 10px;
+				}
+				.headulBox a:hover{
+					color:#fff;
+				}
+				.commonlogo:hover{
+					opacity: .9
+				}
