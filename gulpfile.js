@@ -18,6 +18,12 @@ gulp.task("copyfile",function(){
 	gulp.src("*.html").pipe(gulp.dest("D:\\phpStudy\\WWW\\XiangQu"));
 });
 
+// 复制js
+gulp.task("jsfile",function(){
+	//gulp.src("index.html").pipe(gulp.dest("dist"));
+	gulp.src("js/*.js").pipe(gulp.dest("D:\\phpStudy\\WWW\\XiangQu\\js"));
+});
+
 // //复制html
 // gulp.task("html",function(){
 // 	gulp.src("*.html")
@@ -69,6 +75,8 @@ gulp.task("watchall",function(){
 	gulp.watch("scss/*.scss",["sassfile"]);
 	gulp.watch("*.html",["copyfile"]);
 	gulp.watch("img/*.{jpg,png,gif,ico}",["imagesflie"]);
+	gulp.watch("js/*.js",["jsfile"]);
+
 
 	// gulp.watch(["js/index.js","js/goodslist.js"],["concatanduglifyandrenamejs"]);
 });
