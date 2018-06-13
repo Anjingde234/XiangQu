@@ -31,7 +31,7 @@ gulp.task("jsfile",function(){
 // });
 //复制图片文件
 gulp.task("imagesflie",function(){
-	gulp.src("img/*.{jpg,png,gif,ico}")
+	gulp.src("img/*.{jpg,png,gif,ico,svg}")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\XiangQu\\img"));
 });
 
@@ -74,7 +74,7 @@ gulp.task("imagesflie",function(){
 gulp.task("watchall",function(){
 	gulp.watch("scss/*.scss",["sassfile"]);
 	gulp.watch("*.html",["copyfile"]);
-	gulp.watch("img/*.{jpg,png,gif,ico}",["imagesflie"]);
+	gulp.watch("img/*.{jpg,png,gif,ico,svg}",["imagesflie"]);
 	gulp.watch("js/*.js",["jsfile"]);
 
 

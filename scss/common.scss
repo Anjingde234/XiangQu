@@ -23,6 +23,7 @@ img{
 		width:980px;
 		text-align:center;
 		height:45px;
+    position: relative;
 	}
 		.headSbox img{
 			float:left;
@@ -30,19 +31,20 @@ img{
 		}
 		.headulBox{
 		float:right;
+      li{
+        display:inline;
+        height:45px;
+      }
+      a{
+        font-size:10px;
+        color:#cfcfcf;
+        line-height: 45px;
+        }
+        .headlis{
+          color:#f6d036;
+        }
 		}
-			.headulBox li{
-			display:inline;
-			height:45px;
-		}
-			.headulBox a{
-			font-size:10px;
-			color:#cfcfcf;
-			line-height: 45px;
-			}
-			.headulBox .headlis{
-				color:#f6d036;
-			}
+			
 				.headulBox li:nth-child(2){
 					padding:0px 18px 0px 16px;
 					background: url(../img/headbgimg1.jpg) no-repeat 57px 7px;
@@ -51,13 +53,246 @@ img{
 					padding:0px 18px;
 					background: url(../img/headbgimg1.jpg) no-repeat 95px 7px;
 				}
-				.headulBox li:nth-child(4){
+				.headli4{
 					padding:0px 35px 0px 18px;
 					background: url(../img/headbgimg2.jpg) no-repeat 70px 10px;
 				}
+       .headli4:hover+.erweima{
+            display: block;
+        }
+        .erweima{
+          display: none;
+          position: absolute;
+            top: 37px;
+            right: 0;
+            width: 110px;
+            height: 110px;
+            background: #000;
+            overflow: hidden;
+            padding: 2px;
+            z-index: 5;
+        }
+       
 				.headulBox a:hover{
 					color:#fff;
 				}
 				.commonlogo:hover{
 					opacity: .9
 				}
+ /*底部end*/
+   
+.endBdiv{
+  width: 100%;
+  height: 280px;
+  background: #000;
+}
+  .endSdiv{
+    width:980px;
+    height: 280px; 
+    margin:0 auto;
+  }
+    .endTop{
+      float: left;
+      color:#fff;
+      h2{
+        height: 80px;
+        width: 720px;
+        line-height: 80px;
+        font-size: 18px;
+        font-weight: 300;
+        text-indent: -10px;
+      }
+      p{
+        display: block;
+        padding-left: 560px;
+        font-size: 14px;
+        width: 160px;
+        margin-bottom: 49px;
+      }
+    }
+    .end1div{
+      float: left;
+      border-bottom: 1px solid #58595c;
+      height: 36px;
+      line-height: 36px;
+      color:#58595b;
+      font-size: 12px;
+      width: 720px;
+        li{
+          float: left;
+        }
+        & li:nth-child(1){
+          width: 61px;
+          height: 36px;
+          background: url(../img/ico_common.png) no-repeat -225px -5933px;
+          padding-left: 25px;
+        }
+        & li:nth-child(2){
+          width: 61px;
+          height: 36px;
+          background: url(../img/ico_common.png) no-repeat -221px -5965px;
+          padding-left: 25px;
+        }
+        & li:nth-child(3){
+          width: 61px;
+          height: 36px;
+          background: url(../img/ico_common.png) no-repeat -223px -6006px;
+          padding-left: 38px;
+        }
+        & li:nth-child(4){
+          width: 321px;
+        }
+        & li:nth-child(5){
+          width: 65px;
+          padding-left: 7px;
+          
+        }
+        a{  
+          font-size: 12px;
+          color:#58595b;
+        }
+    }
+      .end1divli a:hover{
+          text-decoration: underline;
+        }
+
+      .endmore{
+        float: left;
+        height: 27px;
+        line-height: 27px;
+        width: 720px;
+        & a:hover{
+          text-decoration: underline;
+        }
+      }
+        .end2div{
+          float: left;
+          li{
+            float: left;
+            padding-left: 10px;
+            padding-right: 14px;
+            width: 48px;
+
+          }
+          a{
+            color:#58595b;
+            font-size: 12px;
+          }
+        } 
+      .end3div{
+        float: left;
+        p{
+          display: block;
+          height: 29px;
+          line-height: 29px;
+          color:#58595b;
+          font-size: 12px;
+        }
+        li{
+          float: left;
+          padding-left: 10px;
+          padding-right: 14px;
+        }
+        a{
+          color:#58595b;
+          font-size: 12px;
+        }
+      } 
+      .police{
+        float: left;
+        width: 720px;
+        height: 24px;
+        line-height: 19px;
+        a{
+          font-size: 12px;
+          float: left;
+          color:#58595b;
+        }
+        img{
+          float: left;
+          padding-left: 272px;
+          padding-right: 5px;
+
+        }
+        & a:hover{
+          text-decoration: underline;
+        }
+      } 
+      .shiming{
+        float: left;
+        a{
+          float: left;
+          padding-left: 333px;
+        }
+      }
+      .ruzhuimg{
+        padding-top:92px;
+        padding-left: 78px;
+      }
+// 右下角入驻
+.bodylocation{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+  .rightbtm{
+    position: fixed;
+    bottom: 2px;
+    right:9px;
+    width: 120px;
+    height: 238px;
+      h2{
+        font-size: 16px;
+        height: 38px;
+        line-height: 38px;
+        color:#fff;
+        text-align: center;
+        background: #000;
+      }
+        span{
+            display: block;
+            width: 120px;
+            height: 120px;
+            background: #000 url(../img/qr.png) no-repeat 5px 5px;
+
+        }
+  } 
+  .canceldiv{
+    position: absolute;
+    right: 0;
+    top: -23px;
+    width: 23px;
+    height: 23px;
+    background: url(../img/ico_common.png) -204px -462px no-repeat;
+  }
+ // 建议advise
+ .advisediv{
+    position: fixed;
+    margin-left: 546px;
+    bottom: 285px;
+    overflow: hidden;
+    background: url(../img/advice.png) no-repeat;
+    left: 50%;
+    width: 53px;
+    height: 53px;
+    &:hover{
+      background: url(../img/advice-hover.png) no-repeat;
+    }
+ }
+  // 返回顶部
+  .maodians{
+    display: block;
+    position: fixed;
+    margin-left: 560px;
+    bottom: 340px;
+    overflow: hidden;
+    background: url(../img/gotop.gif) center bottom  no-repeat;
+    left: 50%;
+    width: 28px;
+    height: 90px;
+    &:hover{
+      height: 117px;
+      background: url(../img/gotop_hover.gif) center bottom no-repeat;
+    }
+ }
+  
