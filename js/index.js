@@ -1,4 +1,7 @@
 		
+		function $(id){
+			return document.getElementById(id);
+		}
 		var sele = document.querySelector('.selectionuls');
 		var square = Array.from(sele.children);
 		var act = document.querySelector('#activejs');
@@ -17,19 +20,9 @@
 			v.onmouseover = function(){
 				actli.forEach(n => n.style.display ='none');
 				actli[k].style.display = 'block';
-				// this.lastChild.classList.add('bank');
-				// var banks = document.querySelector('.bank');
-				// squareli.lastChild.classList.remove('bank');
-				// var banks = this.parentNode.children.lastChild;
-				// banks.classList.remove('bank');
-
 			};
-			
 		});
 		
-			
-
-
 		// 右下角
 		var canceldiv = document.querySelector('.canceldiv');
 		var rightbtm = document.querySelector('.rightbtm');
@@ -46,3 +39,6 @@
 				maodians.style.display = 'none'
 			}
 		}
+		// 轮播图
+		var lunboall = document.('lunboall');
+

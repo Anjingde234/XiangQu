@@ -75,9 +75,10 @@
 		position: relative;
 	}
 	.lunboall{
-		width: 3850px;
-		// height: 364px;
-		position: absolute;
+		width: 770px;
+		height: 364px;
+		position: relative;
+		// overflow: hidden;
 	}
 	.lunbokong{
 		width: 770px;
@@ -85,10 +86,8 @@
 		float: left;
 	}
 		.lunboimg{
-			position: relative;
-			width: 770px;
-			height: 360px;
-			// overflow: hidden;
+			position: absolute;
+			width: 3850px;
 			img{
 				float: left;
 			}
@@ -105,13 +104,29 @@
 			}
 			& a:first-child{
 				background:url(../img/btn_prev.svg ) no-repeat;
-
 				left:330px;
 				}
 				& a:last-child{
 				background:url(../img/btn_next.svg ) no-repeat;
 				left:394px;
 				}
+		}
+		.lunbouls{
+			position: absolute;
+			bottom:-4px;
+			left: 0;
+			z-index: 1;
+			font-size: 0;
+			li{
+				float: left;
+				width: 154px;
+				height: 4px;
+				background: #dddddd;
+
+			}
+			.focus{
+				background: #000;
+			}
 		}
 		.lunboRight{
 			float: left;
